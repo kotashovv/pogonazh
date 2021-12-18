@@ -734,7 +734,7 @@ template {
   content: '';
   top: 40%;
   right: 17%;
-  background-image: url(/assets/images/icons/chevron-down.png);
+  background-image: url(assets/images/icons/chevron-down.png);
   width: 8px;
   height: 13px;
   -webkit-transition: .25s ease-in-out;
@@ -1116,7 +1116,7 @@ template {
 
 .colorist {
   padding: 80px 0;
-  background-image: url(/assets/images/back-colorist.jpg);
+  background-image: url(assets/images/back-colorist.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
