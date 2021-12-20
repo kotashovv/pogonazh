@@ -32,3 +32,27 @@ const technoSlider = new Swiper('.techno__slider', {
     },
     }
 })
+const paintFirstSlider = new Swiper('.paint-first__slider', {
+    direction: 'horizontal',
+    spaceBetween: 30,
+    navigation : {
+        nextEl: '.paint-slider-btn-nxt',
+        prevEl: '.paint-slider-btn-prv',
+    },
+})
+
+const paintSecondSlider = new Swiper('.paint-second-slider__slider', {
+    direction: 'horizontal',
+    loop: false,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    breakpoints: {
+        620: {
+            slidesPerView: 2,
+        },
+    },
+    navigation : {
+        nextEl: '.paint-second-slider__next-btn',
+        prevEl: '.paint-second-slider__prev-btn',
+    },
+})
