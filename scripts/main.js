@@ -1,3 +1,14 @@
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', ()=> {
+    let scrolling = window.scrollY;
+    if ( scrolling > 150) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+})
+
 const aboutSlider = new Swiper('.about-slider-container', {
     direction: 'horizontal',
     loop: true,
