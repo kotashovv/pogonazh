@@ -1,4 +1,18 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+    const menuBurger = document.querySelector('.menu-btn-call');
+const mobileMenu = document.querySelector('.mobile__menu');
+
 const header = document.querySelector('.header');
+
+if (menuBurger) {
+    menuBurger.addEventListener('click', ()=>{
+        menuBurger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('lock');
+        header.classList.toggle('active-menu');
+    })
+}
 
 window.addEventListener('scroll', ()=> {
     let scrolling = window.scrollY;
@@ -169,3 +183,5 @@ var accBtn = document.querySelectorAll('.faq-btn');
     });
   }
 }
+
+});
